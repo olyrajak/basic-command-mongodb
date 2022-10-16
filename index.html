@@ -89,8 +89,10 @@
          rename details field to description from all articles in articles collection. :
 
  db.articles.updateMany({}, {$rename: {"details": "description"}}, {multi: true})
+        </p><p style="font-size:20px;margin:3%">
+         Import Json :mongoimport:jsonImporte='generated.json'
         </p>
-  
+   
         <h2>Mongo Db Aggregate Operations</h2>
         <p style="font-size:20px;margin:3%">
             db.collection_name.count();
