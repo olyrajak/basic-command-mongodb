@@ -82,8 +82,11 @@
         </p><p style="font-size:20px;margin:3%">
            Find all users whose name includes 'ri' in their name:
                 db.collection_name.find({ name: /ri/i })
+        </p><p style="font-size:20px;margin:3%">
+          Find all users who play either 'football' or 'cricket':
+          db.collection_name.find({sports: {$in : ['cricket', 'football']}})
         </p>
-
+ 
         <h2>Mongo Db Aggregate Operations</h2>
         <p style="font-size:20px;margin:3%">
             db.collection_name.count();
