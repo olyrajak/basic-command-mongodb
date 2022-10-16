@@ -85,8 +85,12 @@
         </p><p style="font-size:20px;margin:3%">
           Find all users who play either 'football' or 'cricket':
           db.collection_name.find({sports: {$in : ['cricket', 'football']}})
+        </p><p style="font-size:20px;margin:3%">
+         rename details field to description from all articles in articles collection. :
+
+ db.articles.updateMany({}, {$rename: {"details": "description"}}, {multi: true})
         </p>
- 
+  
         <h2>Mongo Db Aggregate Operations</h2>
         <p style="font-size:20px;margin:3%">
             db.collection_name.count();
