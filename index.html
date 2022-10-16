@@ -79,6 +79,9 @@
         </p>
         <p style="font-size:20px;margin:3%">
             less than Equal To: db.collecton_name.find({state:{$lte:700}})
+        </p><p style="font-size:20px;margin:3%">
+           Find all users whose name includes 'ri' in their name:
+                db.collection_name.find({ name: /ri/i })
         </p>
 
         <h2>Mongo Db Aggregate Operations</h2>
@@ -90,6 +93,8 @@
             <br> <br> db.collection_name.find().skip(4);
             <br> db.collection_name.find().limit(4);
         </p>
+        
+        
     </div>
 </body>
 
