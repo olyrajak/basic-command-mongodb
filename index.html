@@ -39,10 +39,25 @@
             Delete Collection: db.collecton_name.drop()
         </p>
         <p style="font-size:20px;margin:3%">
+            InsertMany: db.collecton_name.insertMany([{}])
+        </p>
+        <p style="font-size:20px;margin:3%">
+            Find Perticular: db.collecton_name.find({state:"State1"})
+        </p>
+        <p style="font-size:20px;margin:3%">
+            Find And Update: db.collecton_name.update({state:"State1"},{$set:{state:State2}})
+        </p>
+        <p style="font-size:20px;margin:3%">
+            Find And delete: db.collecton_name.remove({state:"State1"})
+        </p>
+        <p style="font-size:20px;margin:3%">
             Delete Database : db.dropDatabase()
         </p>
         <p style="font-size:20px;margin:3%">
             drop all documents from `collecton_name` collection. : db.collecton_name.remove({})
+        </p>
+        <p style="font-size:20px;margin:3%">
+            drop `collecton_name` collection. : db.collecton_name.drop()
         </p>
     </div>
 </body>
